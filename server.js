@@ -6,7 +6,7 @@
 * 
 *  Name: __Md Habibor Rahman Hira_____ Student ID: __122646219__ Date: ___September 16th,2022_____________
 *
-*  Online (Cyclic) URL: https://nice-puce-rhinoceros-wig.cyclic.app/aboutp
+*  Online (Cyclic) URL: https://nice-puce-rhinoceros-wig.cyclic.app/about
 *
 ********************************************************************************/
 

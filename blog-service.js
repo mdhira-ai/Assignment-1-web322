@@ -75,3 +75,55 @@ module.exports.getCategories = () => {
         resolve(arryGetCategories);
     });
 }
+
+module.exports.addPost = (postData) => {
+    postData.published = (postData.published) ? true : false;
+    postData.id = ++postcount;
+    return new Promise((resolve, reject) => {
+        posts.push(postData);
+        if (posts.length == 0) {
+            reject("No Result Returned!");
+        }
+        console.log(posts);
+        resolve(posts);
+    });
+}
+
+
+
+
+
+module.exports.getPostsByCategory = (category) => {
+    var arryGetPostsByCategory = [];
+    return new Promise((resolve, reject) => {
+        for (var i = 0; i < posts.length; i++) {
+            if (posts[i].category == category) {
+                arryGetPostsByCategory.push(posts[i]);
+            }
+        }
+        if (arryGetPostsByCategory.length == 0) {
+            reject("No Result Returned!!!");
+        }
+        resolve(arryGetPostsByCategory);
+    });
+}
+
+
+
+
+
+module.exports.getPostById = (id) => {
+    var arryGetPostById = [];
+    return new Promise((resolve, reject) => {
+        for (var i = 0; i < posts.length; i++) {
+            if (posts[i].id == id) {
+                arryGetPostById.push(posts[i]);
+            }
+        }
+        if (arryGetPostById.length == 0) {
+            reject("No Result Returned!!!");
+        }
+        resolve(arryGetPostById);
+    });
+}
+

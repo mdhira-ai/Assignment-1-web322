@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="https://bootswatch.com/3/slate/bootstrap.min.css" />
 
-    <title>WEB322 - About</title>
+    <title>WEB322 - MD Habibor Rahman Hira blog</title>
 </head>
 
 <body>
@@ -31,39 +31,20 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="/blog">Blog</a></li>
-                    <li class="active"><a href="/about">About</a></li>
+                    {{#navLink "/blog"}}Blog{{/navLink}}
+                    {{#navLink "/about"}}About{{/navLink}}
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/posts">Posts</a></li>
-                    <li><a href="/categories">Categories</a></li>
-                    <li><a href="/posts/add">Add Post</a></li>
+                    {{#navLink "/posts"}}Posts{{/navLink}}
+                    {{#navLink "/categories"}}Categories{{/navLink}}
+                    {{#navLink "/posts/add"}}Add Post{{/navLink}}
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
     <div class="container" style="padding-top:60px">
-        <div class="row">
-            <section class="main col-md-9">
-                <article>
-                    <h2>About</h2>
-                    <p>Hi There,
+        {{{ body }}}
 
-                        My name is MD Habibor Rahman Hira and I'm currently studying Computer Programming at Seneca College of Applied Arts & Technology. My Interests are everything related to HTML, JavaScript and CSS and I'm currently in the process of mastering the MEAN stack. It's my goal to become a full-steak JavaScript developer and continue to lean and expand my experience to include all the amazing new dev tools, enviroments, libraries, workflows and design methodlogies available to the full-stack / MEAN developer community.
-                        
-                        Enjoy browsing my app! If you have any questios, or are in need of a JS dev for your project, I can be found at [hmd-habibor-rahman@myseneca.ca].
-                        
-                        Sincerely,
-                        
-                        MD Habibor Rahman Hira</p>
-                </article>
-            </section>
-            <aside class="col-md-3">
-                <h2>Coming Soon</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam accumsan libero a sem venenatis
-                    pharetra.</p>
-            </aside>
-        </div>
     </div>
 
     <!-- Latest compiled and minified jQuery 3.6.0 JavaScript -->
@@ -73,7 +54,7 @@
     <!-- Latest compiled and minified Bootstrap 3.4.1 JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
         integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>
